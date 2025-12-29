@@ -32,31 +32,31 @@ This will build the static site from the Markdown files.
 
 ### From Getting Started[^4]
 
-Material for MkDocs only bundles selected plugins in order to keep the size of the official image small. If the plugin you want to use is not included, you can add them easily. Create a `Dockerfile` and extend the official image:
-
-
-```Dockerfile
-FROM squidfunk/mkdocs-material
-RUN pip install mkdocs-macros-plugin
-RUN pip install mkdocs-glightbox
-```
-
-Next, build the image with the following command:
-
-```bash
-docker build -t squidfunk/mkdocs-material .
-```
-
-The new image will have additional packages installed and can be used exactly like the official image. 
-
+> Material for MkDocs only bundles selected plugins in order to keep the size of the official image small. If the plugin you want to use is not included, you can add them easily. Create a `Dockerfile` and extend the official image:
+> 
+> 
+> ```Dockerfile
+> FROM squidfunk/mkdocs-material
+> RUN pip install mkdocs-macros-plugin
+> RUN pip install mkdocs-glightbox
+> ```
+> 
+> Next, build the image with the following command:
+> 
+> ```bash
+> docker build -t squidfunk/mkdocs-material .
+> ```
+> 
+> The new image will have additional packages installed and can be used exactly like the official image. 
+> 
 ## References
 
 Other inks with useful documentation:
-[mkdocs-material setup](https://squidfunk.github.io/mkdocs-material/setup/)
-[mkdocs-material getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
-[mkdocs-material plugins](https://squidfunk.github.io/mkdocs-material/plugins/)
-[mkdocks-material referance](https://squidfunk.github.io/mkdocs-material/reference/)
-[Deploy to Custom Domain](https://www.mkdocs.org/user-guide/deploying-your-docs/#custom-domains)
+- [mkdocs-material setup](https://squidfunk.github.io/mkdocs-material/setup/)
+- [mkdocs-material getting started](https://squidfunk.github.io/mkdocs-material/getting-started/)
+- [mkdocs-material plugins](https://squidfunk.github.io/mkdocs-material/plugins/)
+- [mkdocks-material referance](https://squidfunk.github.io/mkdocs-material/reference/)
+- [Deploy to Custom Domain](https://www.mkdocs.org/user-guide/deploying-your-docs/#custom-domains)
 
 
 [^1]: [mkdocs-material preview as you write](https://squidfunk.github.io/mkdocs-material/creating-your-site/#previewing-as-you-write)
