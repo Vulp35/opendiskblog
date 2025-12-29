@@ -2,6 +2,27 @@ site_name: opendisk.space
 site_url: https://opendisk.space/
 theme:
   name: material
+  palette:
+    # Palette toggle for automatic mode
+#    - media: "(prefers-color-scheme)"
+#      toggle:
+#        icon: material/brightness-auto
+#        name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to system preference
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
   icon:
     logo: fontawesome/regular/floppy-disk
     repo: fontawesome/brands/github
@@ -19,3 +40,4 @@ plugins:
 
 repo_url: https://github.com/Vulp35/opendiskblog
 repo_name: vulp35/opediskblog
+edit_uri: edit/main/docs/
