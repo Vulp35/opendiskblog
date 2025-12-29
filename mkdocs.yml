@@ -1,0 +1,21 @@
+site_name: opendisk.space
+site_url: https://opendisk.space/
+theme:
+  name: material
+  icon:
+    logo: fontawesome/regular/floppy-disk
+    repo: fontawesome/brands/github
+  features:
+    - content.action.edit
+    - content.action.view
+plugins:
+  - search:
+      enabled: true
+  - blog:
+      blog_dir: .
+      authors_profiles: true
+      post_url_date_format: yyyy
+      archive: false
+
+repo_url: https://github.com/Vulp35/opendiskblog
+repo_name: vulp35/opediskblog

@@ -1,0 +1,9 @@
+name: opendiskblog
+services:
+  mkdocs-material:
+    volumes:
+      - ${PWD}:/docs
+    image: squidfunk/mkdocs-material
+    ports:
+      - 8000:8000
+
